@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Silkscreen&display=swap');
+
+:root {
+    /*colors*/
+    --header-color: #b93e3ee1;
+    --header-font-color: #5f8a9e;
+    --font-color: #FFF6F6;
+    --font-color-link: #FCF5ED;
+    --border-color-link: #F4BF96;
+    --footer-color: #b93e3e;
+
+    /*fonts*/
+    --logo-font: 'Silkscreen', sans-serif;
+    --primary-font: 'Kanit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(233,158,158);
+    background: linear-gradient(117deg, rgba(233,158,158,1) 0%, rgba(255,89,89,1) 31%);
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+/*Navbar*/
+
+.header{
+    padding: 2% 4% 1% 4%;
+    background-color: var(--header-color);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar__logo {
+    font-family: var(--logo-font);
+    font-size: 1.8rem;
+    color: var(--font-color);
+}
+
+.header__navbar__logo__bold {
+    color: var(--header-font-color);
+}
+
+.header__navbar__link {
+    font-family: var(--primary-font);
+    margin-right: 4%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+
+/*main content*/
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% 10%;
+}
+
+.content__introduction {
+    width: 50%;
+}
+
+.content__introduction__h1 {
+    font-family: var(--primary-font);
+    font-size: 2.25rem;
+    font-weight: 500;
+    padding: 2%;
+    color: var(--font-color);
+}
+
+.bold {
+    color: rgb(0, 247, 247);
+}
+
+.content__introduction__p {
+    color: var(--font-color);
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+}
+
+.content__image {
+    width: 50%;
+}
+
+/*content links*/
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__introduction__h2 {
+    color: var(--font-color);
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    margin: 2%;
+}
+
+.content__introduction__link {
+    margin-top: 2%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 35%;
+    text-align: center;
+    padding: 2%;
+    color: var(--font-color-link);
+    text-decoration: none;
+    border-radius: 15px;
+    border: 2px solid var(--border-color-link);
+    letter-spacing: 1px;
+}
+
+/*Footer elements*/
+
+.footer {
+    position: fixed;
+    font-family: var(--primary-font);
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5%;
+    background-color: var(--footer-color);
+}
+
+/*Reposive media*/
+
+@media (max-width: 1200px) {
+    .content {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .content__introduction {
+        width: auto;
+    }
+}
+
