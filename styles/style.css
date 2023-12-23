@@ -152,6 +152,7 @@ body {
 
     .content__introduction {
         width: auto;
+        word-wrap: break-word;
     }
     
     .content__introduction__link {
