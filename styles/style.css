@@ -8,6 +8,7 @@
     --font-color-link: #FCF5ED;
     --border-color-link: #F4BF96;
     --footer-color: #b93e3e;
+    --hover-color: #272727;
 
     /*fonts*/
     --logo-font: 'Silkscreen', sans-serif;
@@ -124,6 +125,10 @@ body {
     border-radius: 15px;
     border: 2px solid var(--border-color-link);
     letter-spacing: 1px;
+}
+
+.content__introduction__link:hover {
+    background-color: var(--hover-color);
 }
 
 /*Footer elements*/
